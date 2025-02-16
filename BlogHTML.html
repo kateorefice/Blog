@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+<style>
+header{
+text-align: center;
+background: url("https://images.unsplash.com/photo-1534211698458-e2be12c1a94c?q=80&w=1749&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
+background-size:cover;
+color:black;}
+a{
+color:white;}
+h1{
+font-size:70px;}
+img{
+width: auto;
+height: 200px;
+margin: 40px 0px 0px 0px;
+border:7px solid white;
+border-radius:20px;}
+ul{
+padding:10px;
+background: rgba(244, 167, 212, 0.8);}
+li{
+display:inline;
+padding:0px 10px 0px 10px;}
+button{
+background-color:#f16b92;
+color:white;
+font-size:16px;
+padding:10px 20px;
+border:none;
+border-radius: 20px;}
+button:hover{
+background-color:#ec4d73;
+transform:scale(1.1);}
+button:active{
+background-color:#d74063;
+transform:scale(1);}
+article{
+background-color: white;
+width:80%;
+margin:20px auto;
+padding:20px;
+margin:20px auto;
+border-radius:15px;
+box-shadow:0px 0px 10px rgba(0,0,0,0.1);}
+#aboutme, #pets, #foods {
+  background-color: #f4e1e1;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 20px;
+}
+@media (max-width: 500px){
+h1{
+font-size: 36px;}
+li{
+display:block;
+padding: 5px;}
+background: pink;}
+</style>
+</head>
+<body>
+<header> 
+<img src="https://i.imgur.com/KPAftOu.jpeg" alt="A picture of Kate">
+<h1>Kate's Blog</h1>
+<ul>
+<li><a href="#aboutme">About Me</a></li>
+<li><a href="#foods">Foods</a></li>
+<li><a href="#pets">Pets</a></li>
+</ul>
+</header>
+<article>
+<section id="aboutme">
+<h2>About Me</h2>
+<p>Hi, I'm Kate! I currently live in Spain, where I'm diving deep into learning Spanish. It's been such a fun and rewarding experience to immerse myself in the language and culture. Aside from my passion for languages, I also have a love for pets and enjoy spending time with them whenever I can. I studied finance and enjoy applying my knowledge in different aspects of my life.</p>
+<p>When I'm not studying or working, you can find me at the park, hanging out with friends, or trying out new foods. I’m always on the lookout for exciting food adventures and love exploring new flavors from all around the world. This blog is a space where I share my journey and interests, and I'm excited to take you along for the ride!</p>
+</section>
+<button>Like</button>
+</article>
+<article>
+<section id="pets">
+<h2>My Pets</h2>
+<p>I have five amazing cats who all have their own unique personalities. Three of them live at my mom's house: Pudge, Pippa, and Toad. They are all Persian cats and are absolutely adorable. Pudge is the curious one, always exploring new spots, while Pippa loves to cuddle and nap in the sun. Toad, being the most playful, is always up for some fun and games!</p>
+<p>At my dad's house, I have two other cats: Duke and Lucy. Duke is the calm and collected one, always keeping an eye on everything, while Lucy is more energetic and loves to be the center of attention. Each of them brings so much joy into my life, and I wouldn't trade them for anything!</p>
+</section>
+<button>Like</button>
+</article>
+<article>
+<section id="foods">
+<h2>Foods</h2>
+<p>I absolutely love cooking and trying new dishes! Since I live in Spain, I've developed a strong fondness for Spanish cuisine. Tortilla and patatas bravas are some of my absolute favorites, and there's nothing quite like enjoying them with a glass of sangria on a sunny day.</p>
+<p>I'm also a huge fan of Mexican food—burritos and quesadillas are my go-to comfort meals. The bold flavors and variety of fillings make every bite an adventure! And, of course, I can't forget about French cuisine. Dishes like duck confit and escargot never fail to impress me with their rich flavors and intricate preparation. Exploring these cuisines and experimenting with new recipes in my kitchen is something I truly enjoy!</p>
+</section>
+<button>Like</button>
+</article>
+<script>$("button").on("click", function() {
+     alert("clicked!")
+     });
+  alert("Javascript works!");</script>
+</body>
+</html>
